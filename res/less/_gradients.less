@@ -1,0 +1,26 @@
+@import '_colors';
+
+
+
+.gradient-footer() {
+  background: #2d3448; /* Old browsers */
+  background: -moz-linear-gradient(top,  #2d3448 0%, #252b3a 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#2d3448), color-stop(100%,#252b3a)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #2d3448 0%,#252b3a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #2d3448 0%,#252b3a 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #2d3448 0%,#252b3a 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #2d3448 0%,#252b3a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d3448', endColorstr='#252b3a',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+
+.gradient (@startColor: #eee, @endColor: white) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}
