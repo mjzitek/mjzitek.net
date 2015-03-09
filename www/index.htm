@@ -13,7 +13,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/black-tie.min.css">
   <link rel="stylesheet" href="css/main.css">
   <script src="js/vendor/modernizr-latest.js"></script>
 </head>
@@ -24,14 +24,39 @@
 
   <div id="main">
     <div id="content">
-      <div style="width: 200px; margin: 30px auto; text-align: center; font-size: 1.4em;">
-        <div class='social-media'>
-          <ul>
-            <li class="fa fa-twitter"><a href='https://twitter.com/mjzitek'>@mjzitek</a></li>
-            <li><a href='https://www.flickr.com/photos/mjzitek/'>Flickr</a></li>
-            <li><a href='http://www.linkedin.com/in/michaeljzitek'>LinkedIn</a></li>
-          </ul>
+      <div class='col'>
+        <div class='col-content'>
+          <div class='col-content-header'>
+            <img src='images/header-circle-about.png' />
+          </div>
+
+          <div class='social-media'>
+            <ul class="bt-ul">
+              <li class="bt-li fab fab-twitter"><a href='https://twitter.com/mjzitek'>@mjzitek</a></li>
+              <li class="bt-li fab fab-flickr"><a href='https://www.flickr.com/photos/mjzitek/'>Flickr</a></li>
+              <li class="bt-li fab fab-linkedin"><a href='http://www.linkedin.com/in/michaeljzitek'>LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div class='col'>
+          <div class='col-content'>
+            <div class='col-content-header'>
+              <img src='images/header-circle-blog.png' />
+            </div>
+            <div id='blog-posts'></div>
+
+          </div>
+      </div>
+      <div class='col'>
+            <div class='col-content photos'>
+              <div class='col-content-header'>
+                <img src='images/header-circle-photos.png' />
+              </div>
+              <div id='photos'></div>
+            </div>
+
       </div>
     </div>
 
@@ -46,6 +71,7 @@
 
 
   <script src="js/vendor/jquery-1.11.2.min.js"></script>
+  <script src="js/config.js"></script>
   <script src="js/main.js"></script>
   <script src="js/ga.js"></script>
 </body>
